@@ -1,0 +1,190 @@
+Flawfinder version 2.0.8, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+decomp/ghidra_decompiled.c:26:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+int printf(char *__format,...)
+decomp/ghidra_decompiled.c:193:  [4] (format) wprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+int wprintf(wchar_t *__format,...)
+decomp/ghidra_decompiled.c:14627:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+  printf((char *)(double)fParm1,&DAT_004182f1);
+decomp/ghidra_decompiled.c:14696:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+  printf(pcParm1,&DAT_0041830e);
+decomp/ghidra_decompiled.c:213:  [3] (random) srand:
+  This function is not sufficiently random for security-related functions
+  such as key and nonce creation (CWE-327). Use a more secure technique for
+  acquiring random values.
+void srand(uint __seed)
+decomp/ghidra_decompiled.c:351:  [3] (random) srand:
+  This function is not sufficiently random for security-related functions
+  such as key and nonce creation (CWE-327). Use a more secure technique for
+  acquiring random values.
+  srand((uint)tVar1);
+decomp/ghidra_decompiled.c:134:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+size_t strlen(char *__s)
+decomp/ghidra_decompiled.c:1219:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:1248:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:2180:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:2209:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:4315:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:4344:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:5432:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:5461:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:5563:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:5592:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:6045:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:6074:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:8134:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:8163:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:8839:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:8868:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:9704:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:9733:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:9968:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:9997:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:10405:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:10434:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:10946:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:10975:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:11716:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:11745:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:12201:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:12230:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:12315:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:12344:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:12936:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:12965:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:13100:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:13129:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:13208:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+decomp/ghidra_decompiled.c:13237:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+    sVar1 = strlen(pcParm1);
+
+ANALYSIS SUMMARY:
+
+Hits = 43
+Lines analyzed = 15068 in approximately 0.23 seconds (64126 lines/second)
+Physical Source Lines of Code (SLOC) = 11680
+Hits@level = [0]  12 [1]  37 [2]   0 [3]   2 [4]   4 [5]   0
+Hits@level+ = [0+]  55 [1+]  43 [2+]   6 [3+]   6 [4+]   4 [5+]   0
+Hits/KSLOC@level+ = [0+] 4.7089 [1+] 3.68151 [2+] 0.513699 [3+] 0.513699 [4+] 0.342466 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

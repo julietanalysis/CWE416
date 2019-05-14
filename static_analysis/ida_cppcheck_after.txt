@@ -1,0 +1,20 @@
+[decomp/ida_decompiled.c:12288]: (warning) wprintf format string requires 0 parameters but 1 is given.
+[decomp/ida_decompiled.c:12295]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+[decomp/ida_decompiled.c:12301]: (warning) %hd in format string (no. 1) requires 'short' but the argument type is 'unsigned int'.
+[decomp/ida_decompiled.c:12366]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+[decomp/ida_decompiled.c:12366]: (warning) %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'.
+[decomp/ida_decompiled.c:1817]: (error) Memory leak: s
+[decomp/ida_decompiled.c:2788]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:3023]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:3795]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:6225]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:7461]: (error) Memory leak: s
+[decomp/ida_decompiled.c:7496]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:9034]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:11640]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:12036]: (error) Returning/dereferencing 's' after it is deallocated / released
+[decomp/ida_decompiled.c:834]: (error) Uninitialized variable: v3
+[decomp/ida_decompiled.c:876]: (error) Uninitialized variable: result
+[decomp/ida_decompiled.c:12279]: (error) Uninitialized variable: result
+[decomp/ida_decompiled.c:12289]: (error) Uninitialized variable: result
+(information) Cppcheck cannot find all the include files (use --check-config for details)
