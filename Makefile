@@ -47,8 +47,8 @@ static_output = ./static_analysis
 
 all: $(TARGET) | $(static_output)
 	# setup the static analys
-	cppcheck -q --output-file=static_analysis/cppcheck_before.txt --enable=warning,information $(SIMPLES_C)
-	flawfinder -Q -c $(SIMPLES_C) > static_analysis/flawfinder_before.txt
+#	cppcheck -q --output-file=static_analysis/cppcheck_before.txt --enable=warning,information $(SIMPLES_C)
+#	flawfinder -Q -c $(SIMPLES_C) > static_analysis/flawfinder_before.txt
 
 $(static_output):
 	mkdir -p $@

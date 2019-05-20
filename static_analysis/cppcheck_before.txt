@@ -1,1 +1,2 @@
+[CWE416_Use_After_Free.gcc.c.64.conf:626]: (error) No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported.
 (information) Cppcheck cannot find all the include files (use --check-config for details)
